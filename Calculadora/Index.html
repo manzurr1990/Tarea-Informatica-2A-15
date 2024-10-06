@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="calculadora">
+        <input type="text" id="pantalla"/>
+        <div class="botones">
+            <button onclick="eliminar_pantalla()">C</button>
+            <button onclick="agregar_numero(1)">1</button>
+            <button onclick="agregar_numero(2)">2</button>
+            <button onclick="agregar_numero(3)">3</button>
+            <button onclick="agregar_numero(4)">4</button>
+            <button onclick="agregar_numero(5)">5</button>
+            <button onclick="agregar_numero(6)">6</button>
+            <button onclick="agregar_numero(7)">7</button>
+            <button onclick="agregar_numero(8)">8</button>
+            <button onclick="agregar_numero(9)">9</button>
+            <button onclick="agregar_numero(0)">0</button>
+            <button onclick="cambio_operacion('+')">+</button>
+            <button onclick="cambio_operacion('-')">-</button>
+            <button onclick="cambio_operacion('*')">x</button>
+            <button onclick="cambio_operacion('/')">÷</button>
+            <button onclick="resolver()">=</button>
+            <button onclick="eliminar()">⌫</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
