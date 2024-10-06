@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Alarma</title>
+</head>
+<body>
+    <div class="fila"> <input type="number" id="segundos"> <button onclick="contador()" id="contador">Iniciar</button><button onclick="reiniciar()" id="reiniciar">Reiniciar</button></div>
+    <div class="fila"><h2> Tiempo faltante en segundos:</h2><h2 id="tiempo">0</h2></div>
+    <div class="fila"><h2>Estado de alarma:</h2><h2 id="mostrar">OFF</h2></div>
+    <audio hidden id="alarma" controls>
+        <source src="alarma.mp3" type="audio/mpeg">
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>
